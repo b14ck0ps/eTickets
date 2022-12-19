@@ -14,7 +14,7 @@ namespace eTickets.Models
         public string ImageURL { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public MovieCatagory MovieCatagory { get; set; }
+        public MovieCategory MovieCategory { get; set; }
 
         //Relationships
         public List<Actor_Movie> Actors_Movies { get; set; }
@@ -25,7 +25,7 @@ namespace eTickets.Models
         //Producer
         public int ProducerId { get; set; }
         [ForeignKey("ProducerId")]
-        public Producers Producer { get; set; }
+        public Producer Producer { get; set; }
         
     }
 }
